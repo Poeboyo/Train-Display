@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Train Station</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon-32x32.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <div class="jumbotron jumbotron-fluid bg-dark">
+            <div class="container">
+                <h1 class="display-3 text-center text-light">The Coding Train Has No Brakes</h1>
+                <h3 class="display-5 lead text-center text-danger">Choo, Chooooooooooo.....</h3>
+            </div>
+        </div>
+
+        <div class="card border border-danger">
+            <div class="card-body bg-danger text-light">
+                Current Train Schedule
+            </div>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Train Name</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Frequency (min)</th>
+                        <th scope="col">Next Arrival</th>
+                        <th scope="col">Minutes Away</th>
+                    </tr>
+                </thead>
+                <tbody id="trainBody">
+                    <tr>
+                        <td id="rowName"></td>
+                        <td id="rowDestination"></td>
+                        <td id="rowFrequency"></td>
+                        <td id="rowArrival"></td>
+                        <td id="rowMinutes"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <hr>
+        <div class="card border border-danger">
+            <div class="card-body bg-danger text-light">
+                Add Train
+            </div>
+            <form>
+                <div class="form-group mr-2 ml-2">
+                    <br>
+                    <label for="trainName">Train Name</label>
+                    <input type="text" class="form-control" id="trainName" placeholder="Please Enter Train Name">
+                </div>
+                <div class="form-group mr-2 ml-2">
+                    <label for="trainDestination">Destination</label>
+
+                    <input type="text" class="form-control mr-2" id="trainDestination"
+                        placeholder="Please Enter Destination">
+                    <!-- I live in a constant state of fear -->
+                </div>
+                <div class="form-group mr-2 ml-2">
+                    <label for="trainFirstTime">First Train Time (HH:mm - Military Time)</label>
+
+                    <input type="text" class="form-control mr-2" id="trainFirstTime"
+                        placeholder="Please Enter First Train Time">
+
+                </div>
+                <div class="form-group mr-2 ml-2">
+                    <label for="trainFrequency">Frequency (Minutes)</label>
+
+                    <input type="text" class="form-control mr-2" id="trainFrequency"
+                        placeholder="Please Enter Frequency">
+                    <br>
+                </div>
+            </form>
+
+            <button class="btn btn-danger align-middle" type="submit" id="submitBtn">Submit form</button>
+
+        </div>
+    </div>
+
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-database.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
