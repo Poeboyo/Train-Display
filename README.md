@@ -1,11 +1,22 @@
 # Train-Display
 
-Create a UI using Bootstrap,
+## How it's Made
 
-Have Forms assigned to variables to save user input
+- A Complete Front-end, utilizing Bootstrap
+- Saves and Displays User Input using jQuery Methods and Code
+- Moment JS allows for responsive timing for each train, deducing the time of arrival and the time before that arrival
+- Utilizes FireBase to store and display information to the Website
+- Using specificly appointed divs, we collect user information from a form and on submit it is sent to the Database and sent back as a new row in our Train Scheduler Table
 
-Store variables as Objects inside Firebase DB
+## Technologies Used
 
-Run Moment JS Methods on the variables holding the train frquency, and train first time
+- HTML
+- CSS
+- BootStrap
+- JavaScript
+- React.js
+- jQuery
 
-On refresh, updated Values and Trains should still be there due to the Data Base holding onto those values and appending them to new Table Rows
+## Difficulties and Learning
+
+- It was interesting to learn and utilize Google's Cloub Based database and having the ability to use code to directly receive information from said database to be displayed on the Web Page in the form of trains. There was no real difficulty besides learning a new database technology
