@@ -1,5 +1,5 @@
 # Train-Display
-A Mock-up Train Schduler powered by JavaScript and Firebase
+A Mock-up Train Schduler powered by JavaScript and Firebase.
 https://poeboyo.github.io/Train-Display/
 
 ## How it's Made
